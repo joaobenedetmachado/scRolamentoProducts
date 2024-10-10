@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h2>Produtos</h2>
+            <div id="product-cards"></div>
+        </div>
+        <div class="right-column">
+            <h2>Consulta de Produto</h2>
+            <input type="text" id="product-name" placeholder="Nome do produto">
+            <input type="number" id="product-quantity" placeholder="Quantidade" min="1">
+            <button id="calculate-btn">Calcular</button>
+            <div id="results">
+                <p>Peso Total: <span id="total-weight">0</span> kg</p>
+                <p>Preço Total: R$ <span id="total-price">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
